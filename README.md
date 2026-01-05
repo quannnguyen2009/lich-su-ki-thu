@@ -6,7 +6,7 @@ Lịch sử kì thú là nền tảng học tập lịch sử tương tác toàn
 
 > 🏛️ "Khám phá lịch sử qua những câu chuyện kì thú – Kết nối quá khứ với hiện tại!"
 
-## [LINK-WEBSITE]()
+## [LINK-WEBSITE](https://historyfun.vercel.app)
 ## [LINK-DEMO](https://drive.google.com/drive/folders/1Eh_sK79SxOlBBK9e-TsHKx42YzVs95yM?usp=sharing)
 
 ---
@@ -24,7 +24,7 @@ Lịch sử kì thú là nền tảng học tập lịch sử tương tác toàn
 
 ### ✅ 1. **Hệ thống tài khoản & cá nhân hóa**
 
-![Ảnh minh họa bài học](https://res.cloudinary.com/dks2uuwb6/image/upload/v1760203628/6ce41bd2-68e3-46df-8f1c-c6173c1db352.png)
+![Ảnh minh họa bài học](https://res.cloudinary.com/da3u3hhqi/image/upload/v1767615958/CleanShot_2026-01-05_at_19.22.04_2x_rsbmmg.jpg)
 
 - Đăng ký tài khoản với email/mật khẩu.
 - Xác thực email qua mã OTP.
@@ -36,7 +36,7 @@ Lịch sử kì thú là nền tảng học tập lịch sử tương tác toàn
 
 ### 📚 2. **Thư viện khóa học lịch sử**
 
-![Ảnh minh họa bài học](https://res.cloudinary.com/dks2uuwb6/image/upload/v1760203640/6c6678d4-9b8d-425a-8940-256acc988172.png)
+![Ảnh minh họa bài học](https://res.cloudinary.com/da3u3hhqi/image/upload/v1767616110/2_omyn78.png)
 
 - **Danh mục khóa học**: Phân loại theo thời kỳ lịch sử (Cổ đại, Trung đại, Cận đại, Hiện đại).
 - **Chi tiết khóa học**: Mô tả, yêu cầu, kết quả học tập về lịch sử.
@@ -48,7 +48,7 @@ Lịch sử kì thú là nền tảng học tập lịch sử tương tác toàn
 
 ### 🎮 3. **Thử thách lịch sử tương tác**
 
-![Ảnh minh họa game tình huống](https://res.cloudinary.com/dks2uuwb6/image/upload/v1760203664/2bd799da-50e3-4f57-8d22-521f5f71942d.png)
+![Ảnh minh họa game tình huống](https://res.cloudinary.com/da3u3hhqi/image/upload/v1767616108/3_opjqof.png)
 
 - **Quiz Challenge**: Trắc nghiệm kiến thức lịch sử với timer và chấm điểm tự động.
 - **Timeline Challenge**: Sắp xếp các sự kiện lịch sử theo thứ tự thời gian (drag & drop).
@@ -61,7 +61,7 @@ Lịch sử kì thú là nền tảng học tập lịch sử tương tác toàn
 
 ### 👨‍🎓 4. **Dashboard học viên lịch sử**
 
-![Ảnh minh họa game tình huống](https://res.cloudinary.com/dks2uuwb6/image/upload/v1760203682/3acfc2ac-e1e1-4d9e-91d6-c1d135d70967.png)
+![Ảnh minh họa game tình huống](https://res.cloudinary.com/da3u3hhqi/image/upload/v1767616108/4_kfw5oo.png)
 
 - **Tổng quan**: Thống kê khóa học lịch sử đã đăng ký, đang học, đã hoàn thành.
 - **Khóa học của tôi**: Danh sách khóa học lịch sử đã đăng ký với tiến trình.
@@ -74,7 +74,7 @@ Lịch sử kì thú là nền tảng học tập lịch sử tương tác toàn
 
 ### 🏆 5. **Hệ thống thành tích & xếp hạng lịch sử**
 
-![Ảnh minh họa game tình huống](https://res.cloudinary.com/dks2uuwb6/image/upload/v1760203697/afbb1afb-ba34-4900-b4d5-e1db6f70d2b2.png)
+![Ảnh minh họa game tình huống](https://res.cloudinary.com/da3u3hhqi/image/upload/v1767616106/5_bnhqy9.png)
 
 - **Leaderboard**: Bảng xếp hạng theo tổng điểm kiến thức lịch sử.
 - **Hệ thống điểm**: Tích lũy điểm từ các thử thách và khóa học lịch sử.
