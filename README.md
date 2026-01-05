@@ -6,7 +6,8 @@ Lịch sử kì thú là nền tảng học tập lịch sử tương tác toàn
 
 > 🏛️ "Khám phá lịch sử qua những câu chuyện kì thú – Kết nối quá khứ với hiện tại!"
 
-## [LINK-DEMO](https://i.ytimg.com/vi/oRs2tfN6rBc/oar2.jpg?sqp=-oaymwEYCJUDENAFSFqQAgHyq4qpAwcIARUAAIhC&rs=AOn4CLBFxvKgW7rLz5iK6iz0T4S5aa_PuQ)
+## [LINK-WEBSITE]()
+## [LINK-DEMO](https://drive.google.com/drive/folders/1Eh_sK79SxOlBBK9e-TsHKx42YzVs95yM?usp=sharing)
 
 ---
 
