@@ -1,53 +1,64 @@
-import { useEffect } from 'react';
+import { submitLessonAPI } from '@/modules/courses/infrastructure/course.api';
 import { useQuizStore } from '@/stores/lesson.slice';
 import { useQueryClient } from '@tanstack/react-query';
-import { submitLessonAPI } from '@/modules/courses/infrastructure/course.api';
+import { useEffect } from 'react';
 
 interface IDocumentLessonProps {
-  data: any;
+  data: {
+    id: string;
+    title: string;
+    description?: string;
+    attachment?: string;
+  };
   slug?: string;
 }
 
 export default function DocumentLesson({ data, slug }: IDocumentLessonProps) {
   const setQuizStarted = useQuizStore(state => state.setQuizStarted);
-
   const queryClient = useQueryClient();
 
   useEffect(() => {
     setQuizStarted(false);
   }, [setQuizStarted]);
 
-  const handleDoneCourse = () => {
-    submitLessonAPI(data.id).then(() => {
-      queryClient.invalidateQueries({ queryKey: ['courses detail', slug] });
-    });
+  const handleDoneCourse = async () => {
+    await submitLessonAPI(data.id);
+    queryClient.invalidateQueries({ queryKey: ['courses detail', slug] });
   };
 
   return (
-    <div className='md:mx-20 mx-4 h-[60vh] overflow-auto'>
-      <div className='flex justify-between'>
-        <h1 className='text-2xl font-bold mb-4'>{data?.title}</h1>
-        <div
-          role='presentation'
+    <div className='max-w-4xl px-8 pb-24'>
+      {/* Title */}
+      <header className='mb-6 border-b pb-4'>
+        <h1 className='text-3xl font-bold text-gray-900'>{data.title}</h1>
+        {/* Description = lead / abstract */}
+        {data.description && (
+          <p className='mt-3 text-lg text-gray-600 italic'>
+            {data.description}
+          </p>
+        )}
+      </header>
+      {/* Main content */}
+      <article className='prose prose-lg prose-gray max-w-none'>
+        {data.attachment ? (
+          <div
+            className='lesson-content'
+            dangerouslySetInnerHTML={{ __html: data.attachment }}
+          />
+        ) : (
+          <p>Nội dung bài học đang được cập nhật...</p>
+        )}
+      </article>
+
+      {/* Action */}
+      <div className='mt-10 flex'>
+        <button
           onClick={handleDoneCourse}
-          className='p-2 text-sm rounded-xl flex items-center h-10 text-white bg-[#212b36] flex-shrink-0 cursor-pointer'
+          className='px-5 py-2.5 rounded-xl text-sm font-medium text-white
+                     bg-gray-900 hover:bg-gray-800 transition'
         >
           Hoàn thành bài học
-        </div>
-      </div>
-      <div className='text-gray-700'>
-        {/* Use description from API directly */}
-        {data?.description && (
-          <div dangerouslySetInnerHTML={{ __html: data.description }} />
-        )}
-        {/* Fallback to htmlContent if exists */}
-        {!data?.description && data?.htmlContent && (
-          <div dangerouslySetInnerHTML={{ __html: data.htmlContent }} />
-        )}
-        {/* Simple text fallback */}
-        {!data?.description && !data?.htmlContent && (
-          <p>{data?.description || 'Nội dung bài học đang được cập nhật...'}</p>
-        )}
+        </button>
       </div>
     </div>
   );

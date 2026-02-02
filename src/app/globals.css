@@ -274,3 +274,13 @@ html {
 .custom-scroll::-webkit-scrollbar {
   display: none; /* Chrome, Safari */
 }
+
+.lesson-content ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  margin: 1rem 0;
+}
+
+.lesson-content li {
+  margin: 0.5rem 0;
+}
