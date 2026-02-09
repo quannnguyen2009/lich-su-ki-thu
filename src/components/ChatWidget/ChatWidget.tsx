@@ -38,7 +38,7 @@ Sứ mệnh: giúp người học hiểu sâu, nhớ lâu và yêu lịch sử V
   const primaryColor = '#BF2F1E';
   const userMessageBg = '#a83e32ff';
   const botMessageBg = '#ffffff';
-  const position = 'bottom-left';
+  const position = 'bottom-right';
   const enableHistory = 'true';
   const maxHistoryMessages = '20';
   const language = 'vi';

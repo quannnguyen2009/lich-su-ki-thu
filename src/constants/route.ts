@@ -11,6 +11,7 @@ export enum ERouteTable {
   ABOUT = '/about',
   CONTACT = '/contact',
   FAQ_PAGE = '/faq',
+  DEVELOPER = '/developer',
 
   CHALLENGE_QUIZ = '/challenges/quizz',
   CHALLENGE_FILL_STORY = '/challenges/fill-story',

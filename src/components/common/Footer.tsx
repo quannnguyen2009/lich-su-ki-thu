@@ -46,7 +46,7 @@ function Footer() {
               FAQs
             </Link>
             <Link
-              href={ERouteTable.ABOUT}
+              href={ERouteTable.DEVELOPER}
               className='cursor-pointer hover:text-primary-main hover:underline text-[#637381]'
             >
               Về chúng tôi
