@@ -33,6 +33,10 @@ const listChallenge = [
     title: 'Điểm khuyết câu chuyện',
     route: ERouteTable.CHALLENGE_FILL_STORY,
   },
+  {
+    title: 'Timeline Lịch sử Việt Nam',
+    route: ERouteTable.TIMELINE,
+  }
 ];
 
 const DropdownTabs = ({ type = 'default' }: DropdownTabsProps) => {

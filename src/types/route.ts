@@ -27,7 +27,8 @@ export const publicRoutes = [
   '/admin/reviews',
   '/admin/courses/categories',
   '/admin/challenges/scores',
-  '/example'
+  '/example',
+  '/tmp'
 ];
 
 /**

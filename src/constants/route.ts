@@ -17,6 +17,7 @@ export enum ERouteTable {
   CHALLENGE_FILL_STORY = '/challenges/fill-story',
   CHALLENGE_PUZZLE = '/challenges/puzzle-heroes',
   CHALLENGE_TIMELINE = '/challenges/timeline',
+  TIMELINE = '/timeline',
 
   COURSE = '/courses',
   COURSE_DETAIL = '/course/:id',
