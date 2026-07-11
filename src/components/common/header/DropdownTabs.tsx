@@ -14,6 +14,7 @@ import { useRouter } from 'next/navigation';
 
 interface DropdownTabsProps {
   type?: 'default' | 'custom';
+  isDarkTheme?: boolean;
 }
 
 const listChallenge = [
@@ -39,7 +40,7 @@ const listChallenge = [
   }
 ];
 
-const DropdownTabs = ({ type = 'default' }: DropdownTabsProps) => {
+const DropdownTabs = ({ type = 'default', isDarkTheme = false }: DropdownTabsProps) => {
   const router = useRouter();
 
   return (
@@ -47,20 +48,26 @@ const DropdownTabs = ({ type = 'default' }: DropdownTabsProps) => {
       <DropdownMenuTrigger className='focus-visible:outline-none'>
         <div
           className={cn(
-            'flex items-center cursor-pointer rounded-md',
-            type === 'custom' && 'bg-[#919EAB14] p-2'
+            'flex items-center cursor-pointer rounded-md transition-all',
+            type === 'custom' && (isDarkTheme ? 'bg-white/10 p-2 hover:bg-white/20' : 'bg-[#919EAB14] p-2')
           )}
         >
           <p
             className={cn(
-              'font-semibold text-sm px-1.5 py-0.5 rounded-md',
-              type === 'custom' ? 'bg-white text-[#212B36]' : 'text-[#212B36]'
+              'font-semibold text-sm px-1.5 py-0.5 rounded-md transition-colors',
+              type === 'custom'
+                ? isDarkTheme
+                  ? 'text-white'
+                  : 'bg-white text-[#212B36]'
+                : isDarkTheme
+                ? 'text-white'
+                : 'text-[#212B36]'
             )}
           >
             Thử thách
           </p>
           <div className='p-1'>
-            <ArrowDown2 size={18} color='#27272A' />
+            <ArrowDown2 size={18} color={isDarkTheme ? '#FFFFFF' : '#27272A'} />
           </div>
         </div>
       </DropdownMenuTrigger>

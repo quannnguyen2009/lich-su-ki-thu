@@ -18,7 +18,7 @@ import { ERouteTable } from '@/constants/route';
 import { AvatarKid, logoApp } from '@/constants/images';
 import { useUserCourse } from '../../../modules/auth/hooks/useUser';
 
-export const MenuMobile = () => {
+export const MenuMobile = ({ isDarkTheme = false }: { isDarkTheme?: boolean }) => {
   const router = useRouter();
   const pathname = usePathname();
   const { isAuthenticated, signOut, user } = useAuthStore();
@@ -100,7 +100,7 @@ export const MenuMobile = () => {
       }}
     >
       <DrawerTrigger>
-        <HambergerMenu variant='Broken' size={24} color='#637381' />
+        <HambergerMenu variant='Broken' size={24} color={isDarkTheme ? '#FFFFFF' : '#637381'} />
       </DrawerTrigger>
       <DrawerContent className='bg-white w-[320px] rounded-none h-full shadow-md overflow-y-auto'>
         <DrawerTitle className='sr-only'>menu</DrawerTitle>

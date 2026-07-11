@@ -8,26 +8,26 @@ export default function SessionAboutUs() {
   return (
     <div className='md:max-w-3xl max-w-sm lg:max-w-5xl xl:max-w-7xl mx-auto pt-10 w-full flex flex-col gap-[120px]'>
       <div id='section-2' className='flex gap-16'>
-        <div className='flex-col justify-center relative w-1/2 hidden lg:flex'>
+        <div className='flex-col justify-center relative w-1/2 hidden lg:flex h-[550px]'>
           <Image
             src={About1}
-            className='absolute top-0 z-0'
+            className='absolute top-0 z-0 object-cover rounded-2xl shadow-md'
             width={250}
-            height={490}
+            height={400}
             alt='Đọc sách'
           />
           <Image
             src={About3}
-            className='self-end'
+            className='self-end object-cover rounded-2xl shadow-md'
             width={300}
-            height={250}
+            height={220}
             alt='Đọc sách'
           />
           <Image
             src={About2}
-            className='self-center pt-16 relative z-10'
-            width={400}
-            height={490}
+            className='self-center pt-16 relative z-10 object-cover rounded-2xl shadow-lg'
+            width={350}
+            height={420}
             alt='Đọc sách'
           />
         </div>

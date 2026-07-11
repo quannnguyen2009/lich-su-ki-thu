@@ -81,7 +81,7 @@ function LoginPage() {
           form={form}
         />
 
-        <div className='text-center text-[#637381] text-sm my-5'>Hoặc</div>
+        {/* <div className='text-center text-[#637381] text-sm my-5'>Hoặc</div>
 
         <button
           type='button'
@@ -95,7 +95,7 @@ function LoginPage() {
             className='h-6 w-6 object-cover'
           />
           Đăng nhập với Google
-        </button>
+        </button> */}
       </div>
     </div>
   );

@@ -3,6 +3,8 @@ import logoGoogle from '../../public/images/auth/logo-google.png';
 import logoApp from '../../public/images/common/logo-app.png';
 import bgHero from '../../public/images/home/bg-hero.jpg';
 import AvatarKid from '../../public/images/common/avatar-kid.png';
+import scene1Landscape from '../../public/images/home/scene1-landscape.png';
+import scene2HungKing from '../../public/images/home/scene2-hung-king.png';
 
 import ErrorImg from '../../public/images/common/error.png';
 
@@ -42,4 +44,6 @@ export {
   About2,
   About3,
   BannerDialogResult,
+  scene1Landscape,
+  scene2HungKing,
 };

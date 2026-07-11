@@ -108,11 +108,11 @@ export default function MuseumPage() {
                         : 'ring-1 ring-white/10 hover:ring-white/30'
                     }`}
                 >
-                  <div className='w-[140px] sm:w-[200px] md:w-full h-24 sm:h-28 md:h-32 rounded-[14px] overflow-hidden bg-white/5'>
+                  <div className='w-[140px] sm:w-[160px] md:w-[180px] h-24 sm:h-28 md:h-28 rounded-[14px] overflow-hidden bg-white/5 flex items-center justify-center'>
                     <img
                       src={s.thumbnail}
                       alt={s.title}
-                      className='h-full w-full object-cover'
+                      className='h-full w-full object-contain'
                     />
                   </div>
                 </button>

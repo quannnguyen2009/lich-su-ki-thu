@@ -64,8 +64,8 @@ function RegisterPage() {
           error={error}
           form={form}
         />
-        <div className='text-center text-secondary text-sm my-5'>Hoặc</div>
-        <button
+        {/* <div className='text-center text-secondary text-sm my-5'>Hoặc</div> */}
+        {/* <button
           type='button'
           onClick={handleGoogleLogin}
           disabled={isPending}
@@ -77,7 +77,7 @@ function RegisterPage() {
             className='h-6 w-6 object-cover'
           />
           Đăng nhập với Google
-        </button>
+        </button> */}
       </div>
     </div>
   );

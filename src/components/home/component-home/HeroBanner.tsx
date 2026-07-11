@@ -28,7 +28,7 @@ const HeroBanner = () => {
             <Image
               src={BannerLeft}
               alt='logo app'
-              className='h-[449px] w-[292px]'
+              className='h-[449px] w-[292px] object-cover rounded-2xl shadow-lg'
             />
             <div
               role='presentation'
@@ -39,11 +39,20 @@ const HeroBanner = () => {
               <IconPlay />
             </div>
           </div>
-          <div className='relative'>
-            <Image src={BannerCenter} alt='logo app' />
+          <div className='relative w-[320px] h-[320px] md:w-[400px] md:h-[400px]'>
+            <Image
+              src={BannerCenter}
+              alt='logo app'
+              fill
+              className='object-cover rounded-full shadow-lg'
+            />
           </div>
-          <div className='relative'>
-            <Image src={BannerRight} alt='logo app' className='w-[292px]' />
+          <div className='relative hidden lg:block'>
+            <Image
+              src={BannerRight}
+              alt='logo app'
+              className='w-[292px] h-[449px] object-cover rounded-2xl shadow-lg'
+            />
             <div
               role='presentation'
               onClick={() => router.push(ERouteTable.COURSE)}
