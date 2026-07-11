@@ -7,7 +7,7 @@ import { About1, About2, About3 } from '@/constants/images';
 import Image from 'next/image';
 
 const S = 4 / 6;
-const E = 1; // extends to end of hero — no white gap before SessionCourse
+const E = 5 / 6;
 
 interface Props {
   progress: MotionValue<number>;

@@ -24,6 +24,9 @@ import About2 from '../../public/images/about/img_1.png';
 import About3 from '../../public/images/about/img_2.png';
 
 import BannerDialogResult from '../../public/images/challenge/dialog-banner.png';
+import Scene3DImg from '../../public/images/home/3d-scene.png';
+import SceneOpeningBg from '../../public/images/home/scene-opening-bg.jpg';
+import SceneHungKingBg from '../../public/images/home/scene-hung-king-bg.jpg';
 
 export {
   bannerAuth,
@@ -46,4 +49,7 @@ export {
   BannerDialogResult,
   scene1Landscape,
   scene2HungKing,
+  Scene3DImg,
+  SceneOpeningBg,
+  SceneHungKingBg,
 };

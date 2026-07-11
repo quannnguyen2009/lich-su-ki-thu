@@ -8,8 +8,6 @@ import {
 import { CourseQueryParams } from '../domain/types';
 
 export function useListCourse(params?: CourseQueryParams) {
-  const { token } = useAuthStore();
-
   const getListCourse = useQuery({
     queryKey: ['list courses', params],
     queryFn: async () => {
@@ -21,7 +19,6 @@ export function useListCourse(params?: CourseQueryParams) {
         return null;
       }
     },
-    enabled: !!token,
     staleTime: 1000 * 60 * 5, // Cache for 5 minutes
     retry: false,
   });

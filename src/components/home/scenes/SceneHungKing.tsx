@@ -1,9 +1,7 @@
 'use client';
 
 import { motion, MotionValue, useTransform } from 'framer-motion';
-// Real Vietnam photos — CSS background-image (no Next.js proxy needed)
-// Hội An ancient town lanterns — Unsplash
-const BG_URL = 'https://cdnphoto.dantri.com.vn/gI_Own97NWi1Vj812ZItiagavQg=/thumb_w/1920/2026/04/26/vuahungduong3-1777194010579.jpg?watermark=true';
+import { SceneHungKingBg } from '@/constants/images';
 
 const S = 1 / 6;
 const E = 2 / 6;
@@ -67,7 +65,7 @@ export default function SceneHungKing({ progress }: Props) {
         style={{
           scale: bgScale,
           y: bgY,
-          backgroundImage: `url('${BG_URL}')`,
+          backgroundImage: `url('${SceneHungKingBg.src}')`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}

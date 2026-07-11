@@ -8,8 +8,9 @@ import SceneHungKing from './scenes/SceneHungKing';
 import SceneMission from './scenes/SceneMission';
 import SceneChallenges from './scenes/SceneChallenges';
 import SceneCourses from './scenes/SceneCourses';
+import Scene3D from './scenes/Scene3D';
 
-const SCENE_COUNT = 5;
+const SCENE_COUNT = 6;
 
 const SCENE_LABELS = [
   'Mở Đầu',
@@ -17,6 +18,7 @@ const SCENE_LABELS = [
   'Sứ Mệnh',
   'Thử Thách',
   'Khóa Học',
+  'Bảo Tàng 3D',
 ];
 
 /** Label shown at the bottom of the viewport indicating the current scene. */
@@ -35,7 +37,7 @@ function SceneLabel({
     [start, start + 0.02, mid, end - 0.02, end],
     [0, 1, 1, 1, 0],
   );
-  const isDark = index === 0 || index === 1;
+  const isDark = index === 0 || index === 1 || index === 5;
   return (
     <motion.div
       className={`absolute bottom-6 left-1/2 -translate-x-1/2 z-50 text-[10px] tracking-[0.3em] uppercase font-medium pointer-events-none ${
@@ -111,6 +113,7 @@ export default function ScrollytellingHero() {
         <SceneMission progress={progress} />
         <SceneChallenges progress={progress} />
         <SceneCourses progress={progress} />
+        <Scene3D progress={progress} />
 
         {/* ── Right-side scene navigation dots ── */}
         <div className='absolute right-5 top-1/2 -translate-y-1/2 z-50 flex flex-col gap-3 hidden md:flex'>

@@ -1,8 +1,7 @@
 'use client';
 
 import { motion, MotionValue, useTransform } from 'framer-motion';
-// Ha Long Bay, Vietnam — public Unsplash photo (no Next.js proxy needed)
-const BG_URL = 'https://c1nguyendu.pgdcujut.edu.vn/wp-content/uploads/2022/07/hinh-nen-powerpoint-trong-dong-70261.jpg';
+import { SceneOpeningBg } from '@/constants/images';
 
 const S = 0;
 const E = 1 / 6;
@@ -66,7 +65,7 @@ export default function SceneOpeningTitle({ progress }: Props) {
         style={{
           scale: bgScale,
           y: bgY,
-          backgroundImage: `url('${BG_URL}')`,
+          backgroundImage: `url('${SceneOpeningBg.src}')`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}
