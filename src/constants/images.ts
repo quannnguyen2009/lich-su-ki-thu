@@ -1,4 +1,4 @@
-import bannerAuth from '../../public/images/auth/banner-auth.png';
+import bannerAuth from '../../public/images/auth/loginbanner.jpg';
 import logoGoogle from '../../public/images/auth/logo-google.png';
 import logoApp from '../../public/images/common/logo-app.png';
 import bgHero from '../../public/images/home/bg-hero.jpg';

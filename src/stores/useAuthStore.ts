@@ -56,6 +56,16 @@ export const useAuthStore = create<AuthState>()(
     {
       name: 'auth-storage', // Tên key lưu trong AsyncStorage
       storage: createJSONStorage(() => localStorage),
+      // Sync cookies back after rehydration from localStorage so the
+      // middleware can always find valid tokens on server-side requests
+      onRehydrateStorage: () => state => {
+        if (state?.token) {
+          document.cookie = `accessToken=${state.token}; path=/; max-age=3600`;
+        }
+        if (state?.refreshToken) {
+          document.cookie = `refreshToken=${state.refreshToken}; path=/; max-age=604800`;
+        }
+      },
     }
   )
 );
