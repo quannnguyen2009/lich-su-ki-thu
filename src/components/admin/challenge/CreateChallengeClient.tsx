@@ -264,10 +264,6 @@ export default function CreateChallengeClient() {
       errors.push('Tiêu đề là bắt buộc');
     }
 
-    if (title.length > 30) {
-      errors.push('Tiêu đề không được vượt quá 30 ký tự');
-    }
-
     if (challengeType === 'quiz' || challengeType === 'fillBlank') {
       if (challengeType === 'quiz' && questions.length === 0) {
         errors.push('Cần có ít nhất một câu hỏi');
@@ -427,10 +423,6 @@ export default function CreateChallengeClient() {
             value={title}
             onChange={e => setTitle(e.target.value)}
           />
-          <div className='flex gap-1 items-center text-xs text-[#637381]'>
-            <Warning2 size='16' color='#637381' variant='Bold' />
-            Tiêu đề dài tối đa 30 ký tự
-          </div>
 
           <label className='text-sm font-semibold text-[#212B36]'>
             Mô tả (tùy chọn)

@@ -139,10 +139,6 @@ export default function CourseDetailsSection({
               <FormControl>
                 <Input placeholder='VD: Khóa học thiết kế web' {...field} />
               </FormControl>
-              <p className='text-xs text-gray-500 flex items-center'>
-                <Info className='w-3 h-3 mr-1' />
-                Tiêu đề đã dài tối đa 30 ký tự
-              </p>
               <FormMessage />
             </FormItem>
           )}

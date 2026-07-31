@@ -134,10 +134,7 @@ export const courseModuleSchema = z.object({
 // Course Form Schema
 export const courseFormSchema = z.object({
   // CourseDetailsSection fields
-  title: z
-    .string()
-    .min(1, 'Tiêu đề là bắt buộc')
-    .max(30, 'Tiêu đề tối đa 30 ký tự'),
+  title: z.string().min(1, 'Tiêu đề là bắt buộc'),
   slug: z.string().optional().default(''),
   category_id: z.string().min(1, 'Danh mục là bắt buộc'),
   short_description: z
